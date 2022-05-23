@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;    
+}
+
+body {
+    background-color: aqua;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    width: 1215px;
+}
+
+.card { 
+    border-radius: 10px;
+    border: solid black;
+    color: red;
+    background-color: aliceblue;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    flex-direction: column;
+     }
+
+.card:hover {
+    background-color: black;
+}
+
+ img {
+    width: 25px;
+    height: 25px;
+    display: block;
+ }
+
+ h1 {
+     color: darkblue;
+     font-size: 25px;
+ }
