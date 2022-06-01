@@ -3,42 +3,94 @@
 }
 
 body {
-    background-color: aqua;
     margin: 0;
     padding: 0;
+    background-color: #EFF0F3;
 }
 
 .container {
-    padding: 20px;
+    padding: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
-    width: 1215px;
+    width: 1280px;
 }
 
 .card { 
-    border-radius: 10px;
-    border: solid black;
-    color: red;
-    background-color: aliceblue;
+    border-radius: 16px;
+    background-color: #FFFFFF;
     display: flex;
-    padding: 10px;
-    align-items: center;
+    padding: 75px 26px 40px 26px;
+    align-items: left;
     flex-direction: column;
-     }
-
-.card:hover {
-    background-color: violet;
 }
 
- img {
-    width: 25px;
-    height: 25px;
-    display: block;
- }
+.first {
+    border-bottom: 1.5px solid #EBECED;
+}
 
- h1 {
-     color: darkblue;
-     font-size: 25px;
- }
+.text {
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.secondary_text {
+    color: #A5ADBB;
+}
+
+.first_text {
+    color: #92969D;
+    padding-bottom: 40px;
+    margin: 0;
+    width: 220px;
+}
+
+.price {
+    margin: 0;
+    padding-bottom: 17px;
+    color:#081F32;
+    font-size: 50px;
+    line-height: 52px;
+}
+
+.heading {
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 28px;
+    line-height: 25px;
+}
+
+.basic {
+    color: #F3B10E;
+}
+
+.list {
+    padding-left: 10px;
+    margin: 0;
+    padding-top: 40px;
+}
+
+.list_item {
+    list-style-type: '\2713';
+    padding-left: 12px;
+    color: #92969D;
+    padding-bottom: 22px;
+}
+
+li::marker {
+    color:#F3B10E;
+}
+
+.button {
+    border-radius: 8px;
+    background-color: #EBECED;
+    text-align: center;
+    padding: 12px 66px;
+    text-decoration: none;
+    color: #798289;
+}
+
+.third {
+    padding: 68px 14px 0 14px;
+}
