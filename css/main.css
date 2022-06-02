@@ -24,6 +24,8 @@ body {
     padding: 75px 26px 40px 26px;
     align-items: left;
     flex-direction: column;
+    width: 344px;
+    max-width: 344px;
 }
 
 .first {
@@ -78,7 +80,7 @@ body {
     padding-bottom: 22px;
 }
 
-li::marker {
+.card_basic li::marker {
     color:#F3B10E;
 }
 
@@ -86,11 +88,55 @@ li::marker {
     border-radius: 8px;
     background-color: #EBECED;
     text-align: center;
-    padding: 12px 66px;
+    padding: 12px 50px;
     text-decoration: none;
     color: #798289;
+    width: 264px;
+    height: 48px;
 }
 
 .third {
     padding: 68px 14px 0 14px;
+}
+
+.button:hover {
+    background-color:#F3B10E;
+}
+
+.social_button {
+    background-color: #FFFFFF;
+    border: 1.5px solid #EBECED;
+}
+
+.card_social li::marker{
+    color: #1DABF2;
+}
+
+.social {
+    color: #1DABF2;
+}
+
+.social_button:hover {
+    background-color: #1DABF2;
+    color: #fff;
+}
+
+.marketing {
+    color: #46D68C;
+}
+
+.card_marketing li::marker{
+    color: #46D68C;
+}
+
+.marketing_button {
+    background-color: #46D68C;
+    color: #fff;
+}
+
+.marketing_button:hover {
+    background-color: #fff;
+    color: #46D68C;
+    border: 1.5px solid #081F32;
+
 }
