@@ -10,11 +10,16 @@ body {
 
 .container {
     padding: 10px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     margin: 0 auto;
     width: 1280px;
+}
+
+.card_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 96px;
 }
 
 .card { 
@@ -84,6 +89,12 @@ body {
     color:#F3B10E;
 }
 
+.third {
+    padding: 68px 14px 0 14px;
+    display: flex;
+    justify-items: center;
+}
+
 .button {
     border-radius: 8px;
     background-color: #EBECED;
@@ -93,14 +104,14 @@ body {
     color: #798289;
     width: 264px;
     height: 48px;
+    display: inline-block;
 }
 
-.third {
-    padding: 68px 14px 0 14px;
-}
 
 .button:hover {
     background-color:#F3B10E;
+    color: #fff;
+    transition-duration: 3s;
 }
 
 .social_button {
@@ -119,6 +130,7 @@ body {
 .social_button:hover {
     background-color: #1DABF2;
     color: #fff;
+    transition-duration: 3s;
 }
 
 .marketing {
@@ -137,6 +149,129 @@ body {
 .marketing_button:hover {
     background-color: #fff;
     color: #46D68C;
-    border: 1.5px solid #081F32;
+    border: 1.5px solid #46D68C;
+    transition-duration: 3s;
 
+}
+
+/* a:visited {
+    color: #081F32;
+} */
+
+/* a:active {
+    background-color: blueviolet;
+} */
+
+.card_medium {
+    margin: 0;
+    padding: 0;
+}
+
+.best__price {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    padding-top: 18px;
+    color: #081F32;
+}
+
+.price_medium {
+    letter-spacing: 0.04em;
+    font-size: 72px;
+    text-align: center;
+    margin: 0;
+}
+
+.secondary_text_medium {
+    font-size: 22px;
+    color: #6E798C;
+    letter-spacing: 0.04em;
+}
+
+.summary_text {
+    text-align: center;
+}
+
+.secondary_text {
+    font-weight: 600;
+    font-size: 16px;
+    color: #081F32;
+}
+
+.not_bold {
+    font-weight: 400;
+    color: #6E798C;
+    letter-spacing: 0.04em;
+    line-height: 20px;
+}
+
+.action {
+    padding: 66px 26px 36px 26px;
+    display: flex;
+    justify-content: center;
+}
+
+.medium_button {
+    background-color: #F8593B;
+    border-radius: 4px;
+    letter-spacing: 0.2em;
+    padding: 22px 56px 20px 56px;
+    text-align: center;
+    display: block;
+    width: 288px;
+    height: 67px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.medium_button:hover {
+    background-color: #fff;
+    color: #F8593B;
+    border: 1.5px solid #F8593B;
+    transition-duration: 3s;
+}
+
+.card_medium {
+    padding: 14px 24px;
+}
+
+.label__offer {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 4px;
+    background-color: #FFC22B;
+    color: #FFFFFF;
+    text-align: center;
+    display: block;
+    padding: 5px 10px;
+ }
+
+ .label {
+     display: flex;
+     justify-content: flex-end;
+    
+ }
+
+.card_img {
+    height: 455px;
+    width: 273px;
+    position: absolute;
+    top: 83.5px;
+    left: -0px;
+}
+
+.premium {
+    min-width: 656px;
+    min-height: 525px;
+    position: relative;
+}
+
+.card_container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;    
 }
