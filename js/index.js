@@ -90,14 +90,94 @@ function dartWaider (name) {
 // dartWaider('Luke')
 
 
-function closeCredit (monthSum, allSum) {
-    return `You will close your debt in ${allSum / monthSum} months`
+// function closeCredit (monthSum, allSum) {
+    // return `You will close your debt in ${allSum / monthSum} months`
+// }
+
+// // console.log(closeCredit(30000, 60000))
+
+// function buyNewCar (allPrice, monthPay) {
+//     return `You will buy new car after ${allPrice / monthPay} months`
+// }
+
+// console.log(buyNewCar(14, 7))
+
+/*let myWay = {
+    distance: 800, 
+    rate: 8,
+    price: 52,
+    fuel: 'electro',
+    'car-id': 563
+} 
+for (let key in myWay) {
+    console.log(key + ": " + myWay[key])
 }
 
-// console.log(closeCredit(30000, 60000))
+const wayDistance = myWay.distance
+const id = myWay['car-id']
 
-function buyNewCar (allPrice, monthPay) {
-    return `You will buy new car after ${allPrice / monthPay} months`
+function myWayCost(item) {
+    if (item.fuel === 'electro' && item.distance > 300){
+        console.log('You shall not pass dat distance, you need portable generator')
+    } else {
+        console.log( `You need ${item.distance / item.rate * item.price}UAH to ride ${item.distance} kilometers`)
+    }
+
 }
 
-console.log(buyNewCar(14, 7))
+myWayCost(myWay) */
+
+
+
+// function displayNumbers(num){
+//     for (let i = 1;  i <= num; i++){
+//         console.log(i)
+//     }
+// }
+// displayNumbers(7)
+
+
+// function sqware(num) {
+//     for (let i = 1; i <= num; num--) {
+//         if (i % 2 === 0) {
+//             console.log (i)
+//         }
+//     }
+// }
+// sqware (100)
+
+
+// function displayLessNumber(num) {
+//     for (let i = num; i >= 1; i--) {
+//         console.log(i)
+//     }
+// }
+// displayLessNumber(5)
+
+
+
+// function summUp() {
+//     let num1 = prompt("Write first number")
+//     let num2 = prompt("Write second number")
+//     alert(+num1 + +num2)
+// }
+
+// summUp()
+
+
+function greetings() {
+    alert("Hello. My name is Kojima, what is your name?")
+    let hel1 = prompt("what is your name?")
+    alert("Nice to meet u, where u are form?")
+    let hel2 = prompt("where u are form?") 
+    if (hel2.toLowerCase() === "ukraine") {
+        alert("!WoW!")
+    } else {
+        alert("Its fine")
+    }
+    let hel3 = confirm("Do tou want try again?")
+    if (hel3) {
+        greetings()
+    }
+}
+greetings()
