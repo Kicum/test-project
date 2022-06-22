@@ -1,8 +1,144 @@
 * {
-    box-sizing: border-box;    
+    box-sizing: border-box;  
+    max-width: 1280px;  
+    margin: 0 auto;
 }
 
 body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #EFF0F3;
+} 
+   
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-family: 'DM Serif Display', serif;
+}
+
+.quotes {
+    display: flex;
+    padding: 32px 48px;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.blue_quote {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 40px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    height: 240px;
+    width: 672px;
+}
+
+.green_quote {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 40px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    height: 240px;
+    width: 672px;
+}
+
+.red_quote {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 40px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 512px;
+}
+
+.left_side {
+    max-width: 672px;
     margin: 0;
-    padding: 0;
+}
+
+.right_side {
+    max-width: 448px;
+    max-height: 512px;
+    margin: 0;
+}
+
+.img_right {
+    width: 140px;
+    height: 140px;
+}
+
+.sign {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+}
+.img_bottom {
+    width: 64px;
+    height: 64px;
+    margin: 0;
+}
+
+.bottom_sign {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.img_quote {
+    padding: 10px 0;
+}
+
+.autor {
+    padding-top: 15px;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    color: #081F32;
+}
+
+.text_middle {
+    max-width: 415px;
+    border-bottom: 2px solid #EBECED;
+    padding-bottom: 50px;
+    line-height: 40px;
+}
+
+span {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #6E798C;
+}
+
+.img_quote__red {
+    padding: 30px 0;
+}
+
+.text_left {
+    margin: 0;
+    width: 415px;
+}
+
+.passage {
+    width: 415px;
+    font-size: 18px;
+    color: #6E798C;
+}
+
+.sign_text {
+    line-height: 25px;
+    font-size: 11px;
+    color: #6E798C;
+}
+
+.right_autor {
+    letter-spacing: 0.03em;
+    font-size: 22px;
+    color: #081F32;
 }
