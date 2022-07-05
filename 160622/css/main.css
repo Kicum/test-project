@@ -12,6 +12,7 @@ body {
 .container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .margin-null {
@@ -46,6 +47,7 @@ body {
 .red_quote {
     flex-direction: column;
     height: 512px;
+    width: 448px;
 }
 
 .left_side {
@@ -92,7 +94,15 @@ body {
 .text_middle {
     max-width: 415px;
     border-bottom: 2px solid #EBECED;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
+    line-height: 40px;
+    
+}
+
+.red_quote-text {
+    width: 368px;
+    height: 160px;
+    font-size: 18px;
     line-height: 40px;
 }
 
@@ -120,4 +130,201 @@ span {
     letter-spacing: 0.03em;
     font-size: 22px;
     color: #081F32;
+}
+
+.course-icon {
+    margin: 0;
+}
+
+.xl-ico {
+    height: 144px;
+    width: 128px;
+    border-radius: 4px;
+    margin: 40px 32px 40px 40px;
+}
+
+.card-xl {
+    max-width: 888px;
+    max-height: 224px;
+    border-radius: 16px;
+    background-color: #fff;
+    flex-direction: column;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 48px;
+    padding-top: 64px;
+
+}
+
+.card {
+    margin: 0;
+}
+
+.card-article {
+    margin: 40px 0;
+    max-width: 432px;
+    line-height: 25px;
+    width: 100%;
+}
+
+.title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 22px;
+    padding-bottom: 8px;
+    max-width: 432px;
+    width: 100%;
+}
+
+.card-xl__author {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #A5ADBB;
+}
+
+.article-content {
+    color: #6E798C;
+    font-size: 16px;
+    padding-top: 8px;
+    max-width: 392px;
+    margin: 0;
+    width: 100%;
+}
+
+.course-info {
+    display: inline-flex;
+    padding-top: 49px;
+    padding-bottom: 49px;
+    justify-items: center;
+}
+
+.card-info__ico {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-info__text {
+    padding-left: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info-text {
+    margin: 0;
+    font-size: 16px;
+    color: #6E798C;
+}
+
+.black {
+    color: #081F32;
+    font-weight: 600;
+    padding-right: 5px;
+}
+
+.python-xl {
+    display: flex;
+    height: 224px;
+    width: 888px;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 16px;
+    margin-bottom: 40px;
+}
+
+.react-xl {
+    display: flex;
+    height: 224px;
+    width: 888px;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 16px;
+    margin-bottom: 40px;
+}
+
+.react-article {
+    margin: 40px 0;
+    max-width: 395px;
+    line-height: 25px;
+}
+
+.designer-xl {
+    display: flex;
+    height: 224px;
+    width: 888px;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 16px;
+}
+
+.card-sm {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    gap: 40px;
+}
+
+.course-card__sm {
+    height: 224px;
+    width: 240px;
+    border-radius: 16px;
+}
+
+.python-sm__bg{
+    background: linear-gradient(321.69deg, #FF6188 0%, #FFB199 100%);
+}
+
+.info-title__sm {
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+    color: #FFFFFF;
+    display:inline-block;
+    padding: 24px 40px 43px 16px;
+    z-index: 3;
+}
+
+.button_style {
+    background-color: #fff;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32px;
+    padding: 10px 35px;
+    border-radius: 8px;
+    margin: 230px 10px 10px 100px;
+    max-width: 101px;
+    max-height: 37px;
+}
+
+.react-sm__bg {
+    background: linear-gradient(321.69deg, #4481EB 0%, #04BEFE 100%);
+}
+
+.designer-sm__bg{
+    background: linear-gradient(132.9deg, #63F7A1 1.3%, #27AE60 98.06%), linear-gradient(143.36deg, #D6FF94 3.66%, #3DC24B 103.19%);
+}
+
+.python-color {
+    color: #FF6188;
+}
+
+.react-color {
+    color: #04BEFE;
+}
+
+.designer-color {
+    color: #3DC24B;
+}
+
+.bg-card__img {
+    position: absolute;
+    z-index: 2;
 }
