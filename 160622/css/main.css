@@ -143,15 +143,9 @@ span {
     margin: 40px 32px 40px 40px;
 }
 
-.card-xl {
-    max-width: 888px;
-    max-height: 224px;
-    border-radius: 16px;
-    background-color: #fff;
-    flex-direction: column;
-}
 
-.cards {
+
+.cards-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -161,8 +155,11 @@ span {
 
 }
 
-.card {
+.cards {
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .card-article {
@@ -227,25 +224,16 @@ span {
     padding-right: 5px;
 }
 
-.python-xl {
+.card {
     display: flex;
     height: 224px;
     width: 888px;
     justify-content: space-between;
     background-color: #fff;
     border-radius: 16px;
-    margin-bottom: 40px;
+    padding: 40px;
 }
 
-.react-xl {
-    display: flex;
-    height: 224px;
-    width: 888px;
-    justify-content: space-between;
-    background-color: #fff;
-    border-radius: 16px;
-    margin-bottom: 40px;
-}
 
 .react-article {
     margin: 40px 0;
@@ -253,21 +241,7 @@ span {
     line-height: 25px;
 }
 
-.designer-xl {
-    display: flex;
-    height: 224px;
-    width: 888px;
-    justify-content: space-between;
-    background-color: #fff;
-    border-radius: 16px;
-}
 
-.card-sm {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    gap: 40px;
-}
 
 .course-card__sm {
     height: 224px;
