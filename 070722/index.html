@@ -1,13 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/main.css">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/additional_rules.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flight Tickets</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <aside class="logos">
+        <img height="100%" src="./img/plane.png" alt="photo of the plane" />
+      </aside>
+
+      <div class="loging-side">
+        <div class="text-block pb-52">
+          <h1 class="pb-22 fs-30 fw-500">Sign in</h1>
+          <p class="pb-6 fs-16 fw-400">
+            If you don&grave;t have an account register
+          </p>
+          <p class="fs-16 fw-400">
+            You can
+            <a class="color-pink no_decoration" href="https://google.com"
+              >Register here !</a
+            >
+          </p>
+        </div>
+
+        <div class="loging_form">
+          <form action="https://google.com">
+            <label for="email" class="mb-10 fs-13 fw-500">Email</label>
+            <div class="email">
+              <img
+                src="./img/message.svg"
+                alt="letter icon"
+                class="email-icon"
+              />
+              <input
+                class="input-style"
+                type="email"
+                id="email"
+                name="email"
+                cols="30"
+                placeholder="Enter your email address"
+              />
+            </div>
+            <!--make with absolute-->
+            <label for="text" class="mb-10 fs-13 fw-500">Password</label>
+            <div class="password">
+              <img
+                src="./img/padlock.svg"
+                alt="padloc icon"
+                class="padloc-icon"
+              />
+              <input
+                class="input-style password-input"
+                type="password"
+                id="text"
+                name="text"
+                cols="30"
+                placeholder="Enter your Password"
+              />
+              <img src="./img/eye.svg" alt="eye icon" class="eye-icon" />
+            </div>
+            <div class="login-checkbox">
+              <form>
+                <input
+                  type="checkbox"
+                  id="remember_me"
+                  name="remember_me"
+                  value="Rememebr me"
+                />
+                <label
+                  class="input-style__remember pl-10 fs-12 fw-300"
+                  for="remember_me"
+                  >Remember me</label
+                >
+              </form>
+              <a
+                class="color-white no_decoration fs-12 fw-300 pl-198"
+                href="https://google.com"
+                >Forgot Password ?</a
+              >
+            </div>
+            <form>
+              <input type="submit" value="Login" class="login-button" />
+            </form>
+          </form>
+          <div class="accounts">
+            <p class="color-gray pb-35 fs-16 fw-500 pl-155">or continue with</p>
+            <a href="https://uk-ua.facebook.com/"
+              ><img src="./img/Facebook.png" alt="facebook link" class="pl-125"
+            /></a>
+            <a href="https://www.icloud.com/"
+              ><img src="./img/apple.png" alt="apple link" class="pl-25 pr-25"
+            /></a>
+            <a href="https://myaccount.google.com/"
+              ><img src="./img/google.png" alt="google link"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
