@@ -18,6 +18,10 @@
   margin-top: 10px;
 }
 
+.mt-20 {
+  margin-top: 20px;
+}
+
 .pb-22 {
   padding-bottom: 22px;
 }
@@ -98,4 +102,8 @@
 
 .fw-300 {
   font-weight: 300;
+}
+
+.tal-center {
+  text-align: center;
 }

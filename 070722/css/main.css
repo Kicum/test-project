@@ -22,10 +22,9 @@ body {
 }
 
 .loging-side {
-  width: 40%;
   color: #fff;
-  padding-top: 30vh;
-  padding-left: 15vh;
+  padding-top: 20vh;
+  padding-left: 40vw;
 }
 
 .loging_form {
@@ -34,7 +33,9 @@ body {
 }
 
 .email,
-.password {
+.password,
+.phone,
+.countries {
   margin-top: 10px;
   display: flex;
   align-items: center;
@@ -58,7 +59,8 @@ input::placeholder {
   padding: 0 0 7px 10px;
 }
 
-input:focus {
+input:focus,
+input::after {
   outline: none;
 }
 
@@ -101,8 +103,45 @@ input:focus {
   color: #fff;
   padding: 15px 190px;
   margin-top: 60px;
+  cursor: pointer;
 }
 
 .accounts {
   margin-top: 40px;
+}
+
+.gender-select {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.male {
+  padding-left: 80px;
+}
+
+.female {
+  padding-right: 80px;
+}
+
+.country-select {
+  background-color: #000;
+  color: #fff;
+  margin-left: 165px;
+  margin-top: 10px;
+}
+
+.countries {
+  border: none;
+  margin-bottom: 10px;
+}
+
+select:focus {
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
+
+input[type="checkbox"]:checked {
+  color: #000;
 }
