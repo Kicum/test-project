@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #EFF0F3;
+}
+
+.container {
+    padding: 10px;
+    margin: 0 auto;
+    width: 1280px;
+}
+
+.card_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 96px;
+}
+
+.card { 
+    border-radius: 16px;
+    background-color: #FFFFFF;
+    display: flex;
+    padding: 75px 26px 40px 26px;
+    align-items: left;
+    flex-direction: column;
+    width: 344px;
+    max-width: 344px;
+}
+
+.first {
+    border-bottom: 1.5px solid #EBECED;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.secondary_text {
+    color: #A5ADBB;
+}
+
+.first_text {
+    color: #92969D;
+    padding-bottom: 40px;
+    margin: 0;
+    width: 220px;
+}
+
+.price {
+    margin: 0;
+    padding-bottom: 17px;
+    color:#081F32;
+    font-size: 50px;
+    line-height: 52px;
+}
+
+.heading {
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 28px;
+    line-height: 25px;
+}
+
+.basic {
+    color: #F3B10E;
+}
+
+.list {
+    padding-left: 10px;
+    margin: 0;
+    padding-top: 40px;
+}
+
+.list_item {
+    list-style-type: '\2713';
+    padding-left: 12px;
+    color: #92969D;
+    padding-bottom: 22px;
+}
+
+.card_basic li::marker {
+    color:#F3B10E;
+}
+
+.third {
+    padding: 68px 14px 0 14px;
+    display: flex;
+    justify-items: center;
+}
+
+.button {
+    border-radius: 8px;
+    background-color: #EBECED;
+    text-align: center;
+    padding: 12px 50px;
+    text-decoration: none;
+    color: #798289;
+    width: 264px;
+    height: 48px;
+    display: inline-block;
+}
+
+
+.button:hover {
+    background-color:#F3B10E;
+    color: #fff;
+    transition-duration: 3s;
+}
+
+.social_button {
+    background-color: #FFFFFF;
+    border: 1.5px solid #EBECED;
+}
+
+.card_social li::marker{
+    color: #1DABF2;
+}
+
+.social {
+    color: #1DABF2;
+}
+
+.social_button:hover {
+    background-color: #1DABF2;
+    color: #fff;
+    transition-duration: 3s;
+}
+
+.marketing {
+    color: #46D68C;
+}
+
+.card_marketing li::marker{
+    color: #46D68C;
+}
+
+.marketing_button {
+    background-color: #46D68C;
+    color: #fff;
+}
+
+.marketing_button:hover {
+    background-color: #fff;
+    color: #46D68C;
+    border: 1.5px solid #46D68C;
+    transition-duration: 3s;
+
+}
+
+/* a:visited {
+    color: #081F32;
+} */
+
+/* a:active {
+    background-color: blueviolet;
+} */
+
+.card_medium {
+    margin: 0;
+    padding: 0;
+}
+
+.best__price {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    padding-top: 18px;
+    color: #081F32;
+}
+
+.price_medium {
+    letter-spacing: 0.04em;
+    font-size: 72px;
+    text-align: center;
+    margin: 0;
+}
+
+.secondary_text_medium {
+    font-size: 22px;
+    color: #6E798C;
+    letter-spacing: 0.04em;
+}
+
+.summary_text {
+    text-align: center;
+}
+
+.secondary_text {
+    font-weight: 600;
+    font-size: 16px;
+    color: #081F32;
+}
+
+.not_bold {
+    font-weight: 400;
+    color: #6E798C;
+    letter-spacing: 0.04em;
+    line-height: 20px;
+}
+
+.action {
+    padding: 66px 26px 36px 26px;
+    display: flex;
+    justify-content: center;
+}
+
+.medium_button {
+    background-color: #F8593B;
+    border-radius: 4px;
+    letter-spacing: 0.2em;
+    padding: 22px 56px 20px 56px;
+    text-align: center;
+    display: block;
+    width: 288px;
+    height: 67px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.medium_button:hover {
+    background-color: #fff;
+    color: #F8593B;
+    border: 1.5px solid #F8593B;
+    transition-duration: 3s;
+}
+
+.card_medium {
+    padding: 14px 24px;
+}
+
+.label__offer {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 4px;
+    background-color: #FFC22B;
+    color: #FFFFFF;
+    text-align: center;
+    display: block;
+    padding: 5px 10px;
+ }
+
+ .label {
+     display: flex;
+     justify-content: flex-end;
+    
+ }
+
+.card_img {
+    height: 455px;
+    width: 273px;
+    position: absolute;
+    top: 83.5px;
+    left: -0px;
+}
+
+.premium {
+    min-width: 656px;
+    min-height: 525px;
+    position: relative;
+}
+
+.card_container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;    
+}

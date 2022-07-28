@@ -1,0 +1,109 @@
+.color-pink {
+  color: #c10c99;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.color-gray {
+  color: #b5b5b5;
+}
+
+.no_decoration {
+  text-decoration: none;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.pb-22 {
+  padding-bottom: 22px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+.pb-6 {
+  padding-bottom: 6px;
+}
+.pl-25 {
+  padding-left: 25px;
+}
+
+.pr-25 {
+  padding-right: 25px;
+}
+
+.pb-35 {
+  padding-bottom: 35px;
+}
+
+.pb-52 {
+  padding-bottom: 52px;
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
+.pl-125 {
+  padding-left: 125px;
+}
+
+.pl-155 {
+  padding-left: 155px;
+}
+
+.pl-198 {
+  padding-left: 198px;
+}
+
+.fs-30 {
+  font-size: 30px;
+  line-height: 45px;
+}
+
+.fs-17 {
+  font-size: 17px;
+  line-height: 26px;
+}
+
+.fs-16 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.fs-13 {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.fs-12 {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.tal-center {
+  text-align: center;
+}
