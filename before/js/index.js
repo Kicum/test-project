@@ -158,29 +158,11 @@ const totalPrice3 = (distance, price) => {
   console.log(`You need ${distance / myWay.rate * price} $ to finish the trip`)
 }
 
-const persons = [{
-  name: 'Amy',
-  job: 'engineer',
-  age: 25,
-  female: true
-},
-{
-  name: 'Rory',
-  job: 'doctor',
-  age: 26,
-  female: false
-},
-{
-  name: 'Doctor',
-  job: 'doctor',
-  age: 1125,
-  female: false
-}]
 // принимает массив с людьми, считаешь сколько там мужчин, 
 //средний возраст и есть ли люди с одинаковой профессие и все это 
 //возвращаешь в консоль 
 // всего 3 человека, из них 2 мужчин Средний возраст - н . Есть/нет с одинаковой профессией
-const mansInArr = (persons) => {
+const menInArr = (persons) => {
   let numberOfMen = 0;
   let totalAge = 0;
   let allJob = [];
@@ -200,7 +182,100 @@ const mansInArr = (persons) => {
     dat we have peoples with same job`
 }
 
-console.log(mansInArr(persons))
+// high order functions - functions that receive functions as an arguments
+// function which is an argument is called - Callback
+
+// array - what type is it?
+// array methods - build-in functions
+// push/pop, splice, shift/unshift, includes, indexOf, slice, findIndex, concat, join
+// forEach, map, filter, some, every, sort, find, reduce,
+const persons = [{
+  name: 'Amy',
+  job: 'engineer',
+  age: 25,
+  female: true
+},
+{
+  name: 'Rory',
+  job: 'doctor',
+  age: 26,
+  female: false
+},
+{
+  name: 'Doctor',
+  job: 'doctor',
+  age: 1125,
+  female: false
+},
+{
+  name: 'Serhii',
+  job: 'unemployed',
+  age: 32,
+  female: false
+},
+{
+  name: 'Iryna',
+  job: 'unemployed',
+  age: 27,
+  female: true
+},
+{
+  name: 'Kathy',
+  job: 'kindergarten-goer',
+  age: 5,
+  female: true
+},
+{
+  name: 'Penny',
+  job: 'promoter',
+  age: 20,
+  female: true
+}, 
+{
+  name: 'Sheldon',
+  job: 'scientist',
+  age: 20,
+  female: false
+}]
+
+const personsReduce = persons.reduce(
+  (accumulator, current) => {
+    if (accumulator && Object.keys(accumulator).includes(current.job)) {
+      accumulator[current.job]++
+    } else {
+      accumulator[current.job] = 1
+    }
+    return accumulator
+  },
+  {}
+);
+
+
+
+// const persons2 = persons.map(person => {
+//   let surname = 'Pond';
+
+//   return {
+//     name: person.name,
+//     job: person.job,
+//     surname: person.name !== 'Doctor' ? surname : 'Who'
+//   }
+// })
+const persons2 = persons.filter(person => person.age < 300)
+const persons3 = persons.filter(item => item.name.includes('r'))
+const someR = persons.some(person => person.name.includes('r'))
+const everyR = persons.every(person => person.name.includes('r'))
+const find1 = persons.find(person => person.name.includes('r'))
+
+
+
+// console.log(persons)
+// console.log(persons3)
+
+// функция получает массив людей/ Нужно вывести список людей чей возраст меньше заданого в аргументах
+function getByAge(persons, age) {
+  return persons.filter(person => person.age < age)
+}
 
 // for (let key in myWay) {
 //     console.log(key + ": " + myWay[key])
@@ -322,3 +397,129 @@ function findThirdSide() {
   return Math.sqrt(firstSide * firstSide + secondSide * secondSide);
 }
 // console.log(findThirdSide());
+
+
+const booksList = [
+  {
+    name: 'Lord of the Ring', 
+    author: 'JJR Tolkien',
+    year: 1935,
+    rating: 5, 
+    price: '33,65',
+    addToFavourites: ['Suzie', 'Mike', 'Elen']
+  },
+  {
+    name: 'Bible', 
+    author: '',
+    year: 0,
+    rating: 5, 
+    price: '10,00',
+    addToFavourites: ['Elen', 'Tag', 'Miro']
+  },
+  {
+    name: 'Harry Potter', 
+    author: 'JJ Rowling',
+    year: 1992,
+    rating: 4, 
+    price: '16,76',
+    addToFavourites: ['Mike', 'Suzie', 'Miro']
+  },
+  {
+    name: 'Taras Bulba', 
+    author: 'NV Gogol',
+    year: 1865,
+    rating: 3, 
+    price: '8,54',
+    addToFavourites: ['Natalya']
+  },
+  {
+    name: 'Karamazov Brothers', 
+    author: 'Dostoyesky',
+    year: 1884,
+    rating: 4, 
+    price: '15,00',
+    addToFavourites: ['Elen', 'Natalya',]
+  },
+]
+
+// функция, которая принимает список книг и рейтинг и выдает книги которые больше или равны этому рейтингу
+
+const chosenRating = (booksList, chosenRequest) => {
+  return booksList.filter(book => book.rating >= chosenRequest)
+}
+
+//принимает список и название которые мы и ищем
+
+const chosenNames = (booksList, chosenName) => {
+  let result = booksList.find(book => book.name === chosenName)
+  return result ? result : 'We do not have such book!'
+}
+// принимает список и выводит только книги с автором
+
+const existAuthors = (booksList) => {
+  return booksList.filter(book => book.author)
+}
+
+
+//принимает список и создает список с авторами
+
+const authorList = (booksList) => {
+  return booksList.map(book => book.author)
+}
+
+
+// принимает список и к каждому элементу списка добавляет новый ключ с текущей датой
+
+const newKey = (booksList) => {
+  booksList.forEach(book => book.date = new Date())
+}
+
+//сортировка списка по году
+
+const sortByYear = (booksList) => {
+  booksList.sort((a,b) => a.year - b.year)
+}
+
+
+//сортировка по имени автора
+
+const sortByAuthor = (booksList) => {
+  booksList.sort((a,b) => {
+    if (a.author > b.author) {
+      return 1
+    } if (a.author < b.author){ 
+      return -1
+    }
+    return 0
+  })
+}
+
+
+// принимает список и считает средний рейтинг массива
+const averageRating = (booksList) => {
+  const average = booksList.reduce((acc, cur) => acc + cur.rating, 0) / booksList.length;
+  console.log(`The average rating of all library are ${average}`) 
+}
+averageRating(booksList)
+
+
+// принимает список и считает кол-во уникальных пользователей
+const getUniqUsers = (booksList) => {
+  const allUsers = booksList.reduce((acc, curr) => acc = [...curr.addToFavourites, ...acc], [])
+  return [...new Set(allUsers)]
+}
+
+
+// принимает список и человека, и выдает массив книг, которые этот человека добавил в избранное
+
+const getFavBook = (booksList, user) => {
+ return  booksList.reduce((acc, curr) => {
+  if (curr.addToFavourites.includes(user)) {
+    acc.push(curr)
+  }
+  return acc
+ }, [])
+
+}
+
+console.log(getFavBook(booksList, 'Natalya'))
