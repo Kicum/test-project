@@ -500,7 +500,7 @@ const averageRating = (booksList) => {
   const average = booksList.reduce((acc, cur) => acc + cur.rating, 0) / booksList.length;
   console.log(`The average rating of all library are ${average}`) 
 }
-averageRating(booksList)
+
 
 
 // принимает список и считает кол-во уникальных пользователей
@@ -522,4 +522,88 @@ const getFavBook = (booksList, user) => {
 
 }
 
-console.log(getFavBook(booksList, 'Natalya'))
+class Car {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+  }
+  
+  age() {
+    let date = new Date();
+    return date.getFullYear() - this.year;
+  }
+}
+
+class Ford extends Car {
+  constructor(name, year){
+    super(name, year),
+    this.american = true
+  }
+
+  age1(year) {
+    return year - this.year
+  }
+}
+
+class Animal{
+  constructor(legsCount, predator){
+    this.legsCount = legsCount,
+    this.predator = predator
+  }
+  sound(voice){
+    console.log(voice)
+  }
+}
+
+class Cat extends Animal{
+  constructor(legsCount, predator, name){
+    super(legsCount, predator),
+    this.name = name
+  }
+}
+
+let cat = new Cat(4, true, "Barsik");
+
+let myCar1 = new Car("Ford", 2014);
+let myCar2 = new Ford("Ford", 2011);
+let car = {
+  name: 'Ferrari',
+  year: 2022
+}
+// console.log(myCar2.age())
+
+
+// scope - области видимости переменной
+// global, lexical and functional
+let first = 123;
+
+function a() {
+  console.log(first);
+  let first = 566;
+  console.log(first)
+  b(second)
+
+  function b() {
+    let third = first
+    console.log(third)
+  }
+}
+
+// call, apply, bind
+// функции немедленного вызова iife{}({})
+// this
+
+let obj34 = {
+  year: 123,
+  age() {
+    return this.year
+  }
+}
+
+
+
+
+
+
+
+
